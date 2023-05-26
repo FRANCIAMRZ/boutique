@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <Title>CARRITO - ZAREM Sitio Web</Title>
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500&family=Playfair+Display+SC:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="IMAGENES BOUTIQUE/logo.png" width="250px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">PRODUCTS</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">ADMINISTRATOR</a></li>
+                    <li><a href="">ACCOUNT</a></li>
+                </ul>
+            </nav>
+            <img src="IMAGENES BOUTIQUE/687259.png" width="30px" height="30px">
+            <img src="IMAGENES BOUTIQUE/descarga.png" class="menu-icon onclick=menutoggle()">
+        </div>
+    </div>
+
+    <!-------------Detalles de los articulos del carrito------------>
+
+    <div class="small-container cart-page">
+
+        <table>
+            <tr>
+                <th>Producto</th>
+                <th>Cantidad</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="IMAGENES BOUTIQUE/BLAZER.png">
+                        <div>
+                            <p>BLAZER CON ESTAMPADO DE PINTURA</p>
+                            <small>Precio: $800.00</small>
+                            <br>
+                            <br>
+                            <a href="">Eliminar</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$800.00</td>
+            </tr>
+        
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="IMAGENES BOUTIQUE/PRODUCTO 1.png">
+                        <div>
+                            <p>BOLSA DE HOMBRO DIMPLE</p>
+                            <small>Precio: $2075.00</small>
+                            <br>
+                            <br>
+                            <a href="">Eliminar</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$2075.00</td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="IMAGENES BOUTIQUE/VALENTINO.png">
+                        <div>
+                            <p>CHAMARRA VALENTINO</p>
+                            <small>Precio: $1020.00</small>
+                            <br>
+                            <br>
+                            <a href="">Eliminar</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$1020.00</td>
+            </tr>
+        </table>
+        <div class="total-price">
+
+            <table>
+                <tr>
+                    <td>SUBTOTAL</td>
+                    <td>$3895.00</td>
+                </tr>
+                <tr>
+                    <td>IMPUESTO</td>
+                    <td>$50.00</td>
+                </tr>
+                <tr>
+                    <td>TOTAL</td>
+                    <td>$3945.00</td>
+                </tr>
+            </table>
+        </div>
+
+
+    </div>
+
+
+
+    <!------------------Pie de página------------------->
+    <div class="Piedepagina">
+        <div clss="container">
+            <div class="row">
+                <div class="Piedepagina-col-1">
+                    <h3>DERCARGA NUESTRA APP</h3>
+                    <p>Descarga la App para dispositivos moviles iOS y Android.</p>
+                </div>
+                <div class="Piedepágina-col-2">
+                    <img src="IMAGENES BOUTIQUE/ENLACE.png">
+                    <br>
+                    <br>
+
+
+                </div>
+                <div class="Piedepágina-col-3">
+                    <h3>ENLACES ÚTILES</h3>
+                    <ul>
+                        <li>CUPONES</li>
+                        <li>PUBLICACIÓN DE BLOG</li>
+                        <li>POLÍTICA DE DEVOLUCIONES</li>
+                        <li>UNIRSE A AFILIADOS</li>
+                    </ul>
+                </div>
+                <div class="Piedepágina-col-4">
+                    <h3>SIGUENOS</h3>
+                    <ul>
+                        <li>FACEBOOK</li>
+                        <li>TWITTER</li>
+                        <li>INSTAGRAM</li>
+                        <li>YOUTUBE</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else {
+                MenuItems.style.maxHeight = "0px";
+            }
+
+        }
+    </script>
+
+
+
+
+
+    </script>
+    
+</body>
+
+</html>
